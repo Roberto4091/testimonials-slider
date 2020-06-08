@@ -69,7 +69,17 @@ a {
 }
 
 .testimonial__thumbnail {
-  padding: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem 3.5rem;
   background-image: url("../images/pattern-bg.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -80,9 +90,44 @@ a {
   width: 100%;
   display: block;
   border-radius: 5px;
+  margin-top: 2rem;
 }
 
-.testimonial__content {
+.testimonial__controls {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-top: -2rem;
+}
+
+.testimonial__controls-btn {
+  border: none;
+  outline: none;
+  padding: 2rem;
+  cursor: pointer;
+  background-size: 0.9rem;
+  background-color: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+.testimonial__controls-btn:hover {
+  background-color: var(--grayish-blue);
+}
+
+.testimonial__controls-btn--prev {
+  background-image: url("../images/icon-prev.svg");
+}
+
+.testimonial__controls-btn--next {
+  background-image: url("../images/icon-next.svg");
+}
+
+.testimonial__author {
   margin-top: 2rem;
   padding-top: 3rem;
   text-align: center;
@@ -137,9 +182,23 @@ a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
-    padding: 8.5rem;
+    padding: 5.5rem 8.5rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  .testimonial__content {
+  .testimonial__thumbnail-img {
+    margin-top: 3rem;
+  }
+  .testimonial__controls {
+    margin-left: 5rem;
+    margin-top: -3rem;
+  }
+  .testimonial__controls-btn {
+    padding: 3rem;
+    background-size: 1.2rem;
+  }
+  .testimonial__author {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 0px;
             flex: 1 1 0;
