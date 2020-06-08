@@ -61,11 +61,33 @@ a {
 }
 
 .testimonial {
+  opacity: 0;
   display: none;
 }
 
 .testimonial--active {
+  opacity: 1;
   display: block;
+  -webkit-animation: fadeIn 500ms ease-in;
+          animation: fadeIn 500ms ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .testimonial__thumbnail {
