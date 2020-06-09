@@ -16,9 +16,8 @@
       const $slideNextCtrl = $slide.querySelector(
         '.testimonial__controls-btn--next',
       );
-
-      const $prevSlide = $slides[key - 1];
-      const $nextSlide = $slides[key + 1];
+      const $prevSlide = $slides[key - 1] || $slides[$slides.length - 1];
+      const $nextSlide = $slides[key + 1] || $slides[0];
 
       $slidePrevCtrl.addEventListener('click', () =>
         changeSlide($slide, $prevSlide),
