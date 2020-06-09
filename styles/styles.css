@@ -113,8 +113,8 @@ a {
   display: block;
   border-radius: 5px;
   margin-top: 2rem;
-  -webkit-box-shadow: 1rem 8rem 10rem -7rem var(--dark-blue);
-          box-shadow: 1rem 8rem 10rem -7rem var(--dark-blue);
+  -webkit-box-shadow: 1rem 5rem 10rem -7rem var(--dark-blue);
+          box-shadow: 1rem 5rem 10rem -7rem var(--dark-blue);
 }
 
 .testimonial__controls {
@@ -213,6 +213,8 @@ a {
   }
   .testimonial__thumbnail-img {
     margin-top: 3rem;
+    -webkit-box-shadow: 1rem 8rem 10rem -7rem var(--dark-blue);
+            box-shadow: 1rem 8rem 10rem -7rem var(--dark-blue);
   }
   .testimonial__controls {
     margin-left: 5rem;
